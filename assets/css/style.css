@@ -1,0 +1,54 @@
+/* assets/css/style.css */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    background: rgba(0, 31, 77, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.btn-warning {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #001f4d;
+}
+
+.btn-warning:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #001f4d;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
