@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>St. Michael Toppers Academy</h5>
-                    <p>Excellence in Education since 2011</p>
+                    <p>Excellence in Education since 2021</p>
                     <p>Where every child's potential is unlocked</p>
                 </div>
                 <div class="col-md-4">

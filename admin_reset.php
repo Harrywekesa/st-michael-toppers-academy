@@ -1,19 +1,34 @@
 <?php
 include 'includes/db.php';
 
-// Change this to your admin email
-$admin_email = 'admin@test.com';
-$new_password = 'admin@test.com';
+// Admin details
+$admin_email = 'kyalo@stmichaeltoppers.co.ke';
+$admin_name  = 'Kyalo';
+$new_password = 'kyalo@stmichaeltoppers.co.ke';
 
+// Hash password
 $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
 
-$stmt = $pdo->prepare("UPDATE users SET password=? WHERE email=? AND role='admin'");
-$stmt->execute([$hashed_password, $admin_email]);
+// Check if admin exists
+$stmt = $pdo->prepare("SELECT id FROM users WHERE email=? AND role='admin' LIMIT 1");
+$stmt->execute([$admin_email]);
+$admin = $stmt->fetch();
 
-echo "Admin password reset successfully!<br>";
+if ($admin) {
+    // Update password
+    $stmt = $pdo->prepare("UPDATE users SET password=?, name=? WHERE email=? AND role='admin'");
+    $stmt->execute([$hashed_password, $admin_name, $admin_email]);
+    echo "Admin account updated successfully.<br>";
+} else {
+    // Insert new admin
+    $stmt = $pdo->prepare("INSERT INTO users (name, email, password, role, created_at) VALUES (?, ?, ?, 'admin', NOW())");
+    $stmt->execute([$admin_name, $admin_email, $hashed_password]);
+    echo "Admin account created successfully.<br>";
+}
+
 echo "Email: $admin_email<br>";
-echo "New Password: $new_password<br>";
+echo "Password: $new_password<br>";
 echo "<a href='login.php'>Login Now</a>";
 
-// Delete this file after use for security!
+// SECURITY: Delete this file after running it once
 ?>

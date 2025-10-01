@@ -1,10 +1,8 @@
-<!-- includes/header.php -->
 <?php
-// Simple base URL detection
 function baseUrl() {
     $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
     $host = $_SERVER['HTTP_HOST'];
-    return $protocol . "://" . $host . "/st-michael-toppers";
+    return $protocol . "://" . $host;
 }
 ?>
 
@@ -23,7 +21,7 @@ function baseUrl() {
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #001f4d;">
         <div class="container">
             <a class="navbar-brand" href="<?php echo baseUrl(); ?>/index.php">
-                <img src="<?php echo baseUrl(); ?>/assets/images/logo.PNG" alt="Logo" height="40">
+                <img src="<?php echo baseUrl(); ?>/assets/images/logo.png" alt="Logo" height="40">
                 St. Michael Toppers Academy
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

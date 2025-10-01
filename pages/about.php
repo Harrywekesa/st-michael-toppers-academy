@@ -7,8 +7,8 @@
     <div class="row mb-5">
         <div class="col-md-6">
             <h2>Our Story</h2>
-            <p>Founded in 2011, St. Michael Toppers Academy has grown from a small preschool to a leading primary school in Nairobi. Our commitment to excellence in education has remained unwavering since day one.</p>
-            <p>We believe in nurturing the whole child - academically, socially, emotionally, and spiritually. Our holistic approach to education ensures that every student reaches their full potential.</p>
+            <p>St. Michael Toppers Academy was established in 2021 to address the educational challenges facing children from the nearby slum area. Many of these children were unable to resume schooling due to financial difficulties.</p>
+            <p>The school was founded out of concern and sympathy, with the mission of providing access to quality education for vulnerable children. Since then, it has grown steadily, becoming a place of opportunity, support, and academic</p>
         </div>
         <div class="col-md-6">
             <img src="../assets/images/school-building.jpg" alt="School Building" class="img-fluid rounded">
@@ -22,10 +22,10 @@
         <div class="col-md-6">
             <h2>Our Vision & Mission</h2>
             <h4>Vision</h4>
-            <p>To be a center of excellence in primary education, nurturing well-rounded individuals who contribute positively to society.</p>
+            <p>A society where every child, regardless of background, has equal access to education and the chance to thrive.</p>
             
             <h4>Mission</h4>
-            <p>To provide quality, holistic education in a nurturing Christian environment that develops the intellectual, physical, social, and spiritual potential of every child.</p>
+            <p>To provide accessible, affordable, and quality basic education to underprivileged children, equipping them with knowledge and skills to build a brighter future.</p>
         </div>
     </div>
     
@@ -39,8 +39,8 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title text-primary">2011</h3>
-                                <p class="card-text">School founded with 25 students in PP1 and PP2. Hired 3 dedicated teachers and established our first classrooms.</p>
+                                <h3 class="card-title text-primary">2021</h3>
+                                <p class="card-text">School founded with 25 students in Playgourp and PP1. Hired 3 dedicated teachers and established our first classrooms.</p>
                             </div>
                         </div>
                     </div>
@@ -49,8 +49,8 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title text-primary">2012</h3>
-                                <p class="card-text">Introduced Grade 1 and Grade 2. Expanded to 60 students. Installed first computer lab with 10 computers.</p>
+                                <h3 class="card-title text-primary">2022</h3>
+                                <p class="card-text">Introduced PP2. Expanded to 60 students. Installed first computer lab with 10 computers.</p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title text-primary">2013</h3>
+                                <h3 class="card-title text-primary">2023</h3>
                                 <p class="card-text">Launched our music and arts program. Introduced sports day and science fair. Student population reached 100.</p>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title text-primary">2014</h3>
+                                <h3 class="card-title text-primary">2024</h3>
                                 <p class="card-text">Built new library with 500+ books. Introduced school bus service. Achieved 95% KCPE pass rate in our first graduating class.</p>
                             </div>
                         </div>
@@ -79,14 +79,14 @@
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title text-primary">2015</h3>
+                                <h3 class="card-title text-primary">2025</h3>
                                 <p class="card-text">Constructed new classroom block with 4 additional classrooms. Introduced Grade 5 and Grade 6. Student population reached 150.</p>
                             </div>
                         </div>
                     </div>
                     
                     <!-- 2016 -->
-                    <div class="col-md-6 mb-4">
+                    <!-- <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h3 class="card-title text-primary">2016</h3>
@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2017 -->
+                     2017 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2018 -->
+                     2018 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2019 -->
+                     2019 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -125,7 +125,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2020 -->
+                    2020 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2021 -->
+                     2021 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2022 -->
+                     2022 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                     
-                    <!-- 2023 -->
+                     2023 
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
@@ -163,7 +163,7 @@
                                 <p class="card-text">Launched school management system. Expanded library collection to 2000+ books. Introduced mental health and wellness program.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

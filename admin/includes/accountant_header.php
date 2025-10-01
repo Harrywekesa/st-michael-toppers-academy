@@ -1,4 +1,3 @@
-<!-- admin/includes/accountant_header.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

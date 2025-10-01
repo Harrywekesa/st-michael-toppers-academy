@@ -1,10 +1,9 @@
-<!-- login.php - Updated -->
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start();
 include 'includes/db.php';
-
-$error = '';
-
+$base = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'];$error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -19,19 +18,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['user_role'] = $user['role'];
         
         // Redirect based on role
-        switch($user['role']) {
+        switch ($user['role']) {
             case 'admin':
-                header('Location: admin/dashboard.php');
+                header("Location: {$base}/admin/dashboard.php");
                 break;
             case 'teacher':
-                header('Location: admin/teacher_dashboard.php');
+                header("Location: {$base}/admin/teacher_dashboard.php");
                 break;
             case 'accountant':
-                header('Location: admin/accountant_dashboard.php');
+                header("Location: {$base}/admin/accountant_dashboard.php");
                 break;
             case 'parent':
-                header('Location: admin/parent_dashboard.php');
+                header("Location: {$base}/admin/parent_dashboard.php");
                 break;
+            default:
+                // fallback if role is unknown
+                header("Location: {$base}/login.php");
         }
         exit();
     } else {

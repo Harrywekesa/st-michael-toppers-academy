@@ -1,9 +1,8 @@
-<!-- includes/db.php -->
 <?php
 $host = 'localhost';
-$dbname = 'st_michael_toppers';
-$username = 'root';
-$password = '';
+$dbname = 'icalkvah_st_michael_toppers';
+$username = 'icalkvah_root';
+$password = 'Harrison14999...';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

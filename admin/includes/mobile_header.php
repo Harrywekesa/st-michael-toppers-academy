@@ -1,4 +1,3 @@
-<!-- admin/includes/mobile_header.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

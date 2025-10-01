@@ -83,7 +83,7 @@
                 <a href="pages/about.php" class="btn btn-primary">Learn More</a>
             </div>
             <div class="col-md-6">
-                <img src="assets/images/logo.PNG" alt="About School" class="img-fluid rounded">
+                <img src="assets/images/schoolpic.jpg" alt="About School" class="img-fluid rounded">
             </div>
         </div>
     </div>

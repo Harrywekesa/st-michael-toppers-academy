@@ -1,10 +1,12 @@
-<!-- admin/students.php -->
 <?php 
 session_start();
-if (!isset($_SESSION['user_id']) || ($_SESSION['user_role'] != 'admin' && $_SESSION['user_role'] != 'teacher')) {
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+if (!isset($_SESSION['user_id']) || $_SESSION['user_role'] != 'admin') {
     header('Location: ../login.php');
     exit();
 }
+
 
 include '../includes/db.php';
 
@@ -86,13 +88,14 @@ $students = $pdo->query("
 $parents = $pdo->query("SELECT * FROM users WHERE role='parent' ORDER BY name")->fetchAll();
 
 // Get students who are active but not assigned to a class (recently approved)
-$unassigned_students = $pdo->query("
-    SELECT s.*, sa.student_name as application_name, sa.grade_applying_for
-    FROM students s
-    LEFT JOIN student_applications sa ON s.id = sa.student_id
-    WHERE s.class_id IS NULL AND s.status = 'active'
-    ORDER BY s.created_at DESC
-")->fetchAll();
+$query = "
+  SELECT s.id, s.name, s.admission_no, s.gender, s.status, s.created_at,
+         sa.status AS application_status, sa.grade_applying_for
+  FROM students s
+  LEFT JOIN student_applications sa ON sa.student_id = s.id
+  ORDER BY s.created_at DESC
+";
+
 ?>
 
 <?php include 'includes/admin_header.php'; ?>

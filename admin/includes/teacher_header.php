@@ -1,4 +1,3 @@
-<!-- admin/includes/teacher_header.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

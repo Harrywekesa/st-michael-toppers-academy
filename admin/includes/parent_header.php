@@ -1,4 +1,3 @@
-<!-- admin/includes/parent_header.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
