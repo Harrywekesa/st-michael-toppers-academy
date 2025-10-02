@@ -73,7 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     
                     <div class="text-center mt-3">
                         <a href="student_application.php">Apply for Admission</a> | 
-                        <a href="#">Forgot Password?</a>
+                        <a href="forgot_password.php">Forgot Password?</a>
+
                     </div>
                 </div>
             </div>
